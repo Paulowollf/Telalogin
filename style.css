@@ -1,0 +1,52 @@
+@charset "UTF-8" 
+
+/* 
+Paleta de cores 
+Verde:  
+*/ 
+
+* { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html { 
+    height: 100vh;
+    width:100vw;
+    background-color: rgb(250, 184, 62);
+} 
+
+main { 
+    height: 100vh;
+    width: 100vw; 
+    position: relative;
+} 
+
+section#login{ 
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+    border-radius: 20px;
+} 
+
+section#login > div#imagem { 
+    
+    background: rgb(94, 177, 255) url(img/sean-pollock-PhYq704ffdA-unsplash.jpg);
+    border-radius: 20px;
+    background-size: cover  ;
+    background-position: left bottom ; 
+    height: 200px;
+     
+}
+
+section#login > div#formulario { 
+    display: block;
+    padding: 10px;
+}
