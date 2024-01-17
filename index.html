@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TELA DE LOGIN </title>
     <link rel="shortcut icon" href="none" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -12,13 +13,37 @@
     
 <main> 
     <section id="login"> 
-        <div id="imagem"></div>
+        <div id="imagem">
+            
+        </div>
 
         <div id="formulario"> 
             <h1>Login</h1>
             <p>Seja bem-vindo, Faça o Login</p> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis possimus neque sequi consequuntur similique, est ratione. Asperiores optio quae unde repellat, maxime natus consectetur deleniti, ea nobis magni non ducimus.</p>
-            <form action="login.php" method="post"></form>
+            <form action="login.php" method="post">
+                <div class="campo">
+                    <span class="material-symbols-outlined">
+                        person</span>
+                    <input type="email" name="login" id="ilogin" placeholder="seu email aqui" required>
+                    <label for="ilogin" id="login">Login</label>
+                </div>
+                <div class="campo">
+                    <span class="material-symbols-outlined">   password    </span>
+                    <input type="password" name="senha" id="isenha" placeholder="senha">
+                    
+                    <label for="isenha" >Senha</label>
+                </div>
+                <input type="submit" value="entrar">
+                <a href="esqueci.html" class="botao">  
+                    esquece a senha  <span class="material-symbols-outlined">
+                        mail</span>
+                </a>
+
+
+
+
+            </form>
         </div>
     </section>
 </main>

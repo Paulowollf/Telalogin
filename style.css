@@ -24,6 +24,10 @@ main {
     position: relative;
 } 
 
+#formulario, form , #campo { 
+    padding: 10px !important;
+}
+
 section#login{ 
     position: absolute;
     top: 50%;
@@ -31,7 +35,7 @@ section#login{
     transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 40em;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
     border-radius: 20px; 
     transition: width .3s, height .3s;
@@ -52,4 +56,50 @@ section#login > div#formulario {
     display: block;
     padding: 10px;
     font-family: monospace;
+} 
+
+form > input[type=submit] { 
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    height: 30px;
+
+         background-color: rgba(20, 202, 20, 0.61);
+    font-size: 1em;
+} 
+
+form > input[type=submit]:hover{ 
+    background-color: rgb(20, 202, 20);
+} 
+
+form a , .botao { 
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    padding-top: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: 1px solid  rgba(94, 235, 94, 0.863);
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.863);
 }
+
+div.campo > label { 
+    display: none;
+
+}
+
+form a , .botao:hover {
+    background-color: rgba(94, 235, 94, 0.863) ;
+  }  
+
+
+  form > div.campo { 
+    background-color: aquamarine; 
+    display: block;
+    width: 100%;
+    margin: 5px 0px;
+    height: 40px;
+    border-radius: 5px;
+  }
